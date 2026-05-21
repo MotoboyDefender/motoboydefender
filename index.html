@@ -53,6 +53,28 @@
             height: 28px;
             margin-right: 12px;
         }
+        
+        /* Galeria de Fotos Otimizada */
+        .screenshot-gallery {
+            margin: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .screenshot-gallery img {
+            width: 31%;
+            min-width: 220px;
+            border-radius: 10px;
+            border: 2px solid #333333;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        .screenshot-gallery img:hover {
+            transform: scale(1.03);
+            border-color: #ffd700;
+        }
+
         .section {
             background-color: #262626;
             padding: 25px;
@@ -78,6 +100,17 @@
             text-align: left;
             line-height: 1.6;
         }
+        
+        /* Ajuste para telas pequenas (Celulares) */
+        @media (max-width: 600px) {
+            .screenshot-gallery {
+                justify-content: center;
+            }
+            .screenshot-gallery img {
+                width: 80%;
+                margin-bottom: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -90,7 +123,6 @@
         <!-- Botão Oficial Google Play -->
         <div class="badge-container">
             <a href="#" class="play-store-btn">
-                <!-- Ícone Oficial do Google Play em Vetor -->
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
                     <path d="M3.52992 2.15011C3.18992 2.51011 3 3.06011 3 3.78011V20.2301C3 20.9501 3.18992 21.5001 3.52992 21.8601L3.62004 21.9301L13.5601 11.9901V11.8701L3.62004 1.93011L3.52992 2.15011Z" fill="#EA4335"/>
                     <path d="M16.8501 15.2801L13.5601 11.9901V11.8701L16.8501 8.58011L16.94 8.63011L20.8301 10.8401C21.9401 11.4701 21.9401 12.5101 20.8301 13.1401L16.94 15.3501L16.8501 15.2801Z" fill="#FBBC05"/>
@@ -99,6 +131,13 @@
                 </svg>
                 <span>BAIXAR NA PLAY STORE</span>
             </a>
+        </div>
+
+        <!-- Seção de Fotos Reais com extensão .jfif -->
+        <div class="screenshot-gallery">
+            <img src="print1.jfif" alt="Painel do Aplicativo">
+            <img src="print2.jfif" alt="Foto Carimbada Portão">
+            <img src="print3.jfif" alt="Demonstração na Rua">
         </div>
 
         <!-- Seção Como Funciona -->
@@ -118,7 +157,7 @@
             <p>O aplicativo Motoboy Defender foi desenvolvido para fornecer segurança e comprovação fotográfica para entregadores.</p>
             <p><strong>1. Coleta e Uso de Informações:</strong> Solicitamos permissão de <strong>Câmera</strong> (exclusivamente para capturar as fotos das entregas) e <strong>Localização/GPS</strong> (apenas para gerar o carimbo com as coordenadas geográficas sobre a foto).</p>
             <p><strong>2. Armazenamento de Dados:</strong> O Motoboy Defender <strong>não possui servidores externos</strong> e não coleta seus dados na internet. Todos os registros fotográficos são salvos localmente e diretamente no armazenamento do seu celular.</p>
-            <p><strong>Contato:</strong> <a href="mailto:motoboydefender@hotmail.com" style="color: #ffd700; text-decoration: underline;">motoboydefender@hotmail.com
+            <p><strong>Contato:</strong> <a href="mailto:motoboydefender@hotmail.com" style="color: #ffd700; text-decoration: underline;">motoboydefender@hotmail.com</a></p>
         </div>
     </div>
 
