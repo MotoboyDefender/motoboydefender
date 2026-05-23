@@ -36,6 +36,19 @@
             color: #cccccc;
             margin-bottom: 30px;
         }
+        .banner-container {
+            margin: 20px 0;
+        }
+        .banner-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        .banner-img:hover {
+            transform: scale(1.02);
+        }
         .badge-container {
             margin: 30px 0;
         }
@@ -100,14 +113,34 @@
             padding-left: 20px;
             line-height: 1.8;
         }
-        .privacy {
-            font-size: 0.85em;
-            color: #888888;
+
+        /* CARD DE PRIVACIDADE: Design limpo, claro e muito legível */
+        .privacy-card {
+            background-color: #e8f5e9;
+            color: #1c2833;
+            padding: 30px;
+            border-radius: 12px;
             margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #333333;
             text-align: left;
-            line-height: 1.6;
+            line-height: 1.7;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 1px solid #c8e6c9;
+        }
+        .privacy-card h3 {
+            color: #2e7d32;
+            margin-top: 0;
+            font-size: 1.4em;
+            border-bottom: 2px solid #a5d6a7;
+            padding-bottom: 8px;
+        }
+        .privacy-card p, .privacy-card ul {
+            font-size: 0.95em;
+        }
+        .privacy-card ul {
+            padding-left: 20px;
+        }
+        .privacy-card li {
+            margin-bottom: 10px;
         }
         
         /* Ajuste para telas pequenas (Celulares) */
@@ -129,9 +162,14 @@
         <h1>MOTOBOY DEFENDER</h1>
         <p class="subtitle">Proteja o seu bolso e a sua conta contra falsas alegações de extravio.</p>
 
+        <!-- Banner Principal Chamativo -->
+        <div class="banner-container">
+            <img src="evite.jpg" alt="Evite Bloqueios Injustos com Motoboy Defender" class="banner-img">
+        </div>
+
         <!-- Botão de Download Oficial via MediaFire -->
         <div class="badge-container">
-            <a href="https://www.mediafire.com/file/nctbtxarx0jjpio/MotoboyDefender_D.apk/file" class="play-store-btn" target="_blank">
+            <a href="https://mediafire.com" class="play-store-btn" target="_blank">
                 <!-- Ícone de Download Seta para Baixo -->
                 <svg viewBox="0 0 24 24" xmlns="http://w3.org">
                     <path d="M5 20H19V18H5V20ZM19 9H15V3H9V9H5L12 16L19 9Z"/>
@@ -140,31 +178,38 @@
             </a>
         </div>
 
-        <!-- Seção Como Funciona -->
+        <!-- Seção Como Funciona (Linguagem do Corre) -->
         <div class="section">
-            <h2>Como o App te Defende?</h2>
-            <p>Gere provas fotográficas incontestáveis, carimbadas na hora com Data, Hora, Latitude e Longitude via satélite.</p>
+            <h2>Como o App te Defende no Corre?</h2>
+            <p>Gere provas fotográficas incontestáveis contra bloqueios injustos das plataformas, carimbadas na hora com dados de satélite.</p>
             <ol>
-                <li><strong>Ative o Botão:</strong> Ligue o botão amarelo flutuante e abra o seu aplicativo de entregas padrão.</li>
-                <li><strong>Registre o Local:</strong> No ponto de entrega, clique no botão "MD" e tire a foto focando no número da casa ou portão.</li>
-                <li><strong>Prova Blindada:</strong> O app cria uma faixa preta permanente na foto com as coordenadas do GPS. Tudo salvo na sua Galeria!</li>
+                <li><strong>Ative o Escudo:</strong> Ligue o botão amarelo flutuante do MD e abra o aplicativo de entregas que você já usa normalmente.</li>
+                <li><strong>Registre a Entrega:</strong> No local, clique no botão flutuante e tire a foto focando no número da casa, portão ou cliente recebendo.</li>
+                <li><strong>Prova Blindada Sem Bagunça:</strong> O app cria uma faixa preta permanente na foto com as coordenadas do GPS, data e horário exato. Tudo vai direto para uma <strong>pasta organizada e exclusiva do Motoboy Defender</strong>, sem misturar ou lotar sua galeria pessoal!</li>
             </ol>
         </div>
 
-        <!-- Seção de Fotos Reais -->
+        <!-- Seção de Fotos Reais (Atualizada com o mapa.jpg) -->
         <div class="screenshot-gallery">
-            <img src="print1.jfif" alt="Painel do Aplicativo">
+            <img src="mapa.jpg" alt="Motoboy Defender em Ação no iFood">
             <img src="print2.jfif" alt="Foto Carimbada Portão">
             <img src="print3.jfif" alt="Demonstração na Rua">
         </div>
 
-        <!-- Política de Privacidade Obrigatória -->
-        <div class="privacy">
-            <h3>POLÍTICA DE PRIVACIDADE – MOTOBOY DEFENDER</h3>
-            <p>O aplicativo Motoboy Defender foi desenvolvido para fornecer segurança e comprovação fotográfica para entregadores.</p>
-            <p><strong>1. Coleta e Uso de Informações:</strong> Solicitamos permissão de <strong>Câmera</strong> (exclusivamente para capturar as fotos das entregas) e <strong>Localização/GPS</strong> (apenas para gerar o carimbo com as coordenadas geográficas sobre a foto).</p>
-            <p><strong>2. Armazenamento de Dados:</strong> O Motoboy Defender <strong>não possui servidores externos</strong> e não coleta seus dados na internet. Todos os registros fotográficos são salvos localmente e diretamente no armazenamento do seu celular.</p>
-            <p><strong>Contato:</strong> <a href="mailto:motoboydefender@hotmail.com" style="color: #ffd700; text-decoration: underline;">motoboydefender@hotmail.com</a></p>
+        <!-- Política de Privacidade Nova: Clara, Transparente e Legível -->
+        <div class="privacy-card">
+            <h3>🛡️ POLÍTICA DE PRIVACIDADE – MOTOBOY DEFENDER</h3>
+            <p>O aplicativo Motoboy Defender foi desenvolvido de forma independente para fornecer total segurança jurídica e comprovação física para entregadores de aplicativo.</p>
+            
+            <ul>
+                <li><strong>1. Coleta e Uso de Informações:</strong> Solicitamos permissão da sua <strong>Câmera</strong> (usada unicamente para tirar as fotos de comprovação das entregas) e do seu <strong>Localização/GPS</strong> (ativado apenas no momento da foto para gerar as coordenadas geográficas sobre o carimbo da prova).</li>
+                <li><strong>2. Armazenamento Seguro e Sem Servidores:</strong> O Motoboy Defender <strong>não possui servidores externos</strong> e não coleta ou monitora seus dados pela internet. Suas fotos e históricos ficam salvos localmente e exclusivamente na memória do seu próprio celular. Nós não compartilhamos nada com as plataformas (iFood, Rappi, Uber, etc.).</li>
+            </ul>
+            
+            <p style="margin-top: 20px; font-weight: bold; border-top: 1px solid #a5d6a7; padding-top: 15px;">
+                📬 Contato Direto com o Desenvolvedor: 
+                <a href="mailto:motoboydefender@hotmail.com" style="color: #2e7d32; text-decoration: underline; font-weight: bold;">motoboydefender@hotmail.com</a>
+            </p>
         </div>
     </div>
 
