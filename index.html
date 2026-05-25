@@ -3,169 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motoboy Defender - Evite Bloqueios Injustos!</title>
-    
-    <!-- Meta Tags para o Google encontrar o Motoboy Defender -->
-    <meta name="description" content="Motoboy Defender - O seu escudo contra falsas alegações de extravio de pedidos. Proteja sua conta e seu bolso.">
-    <meta name="keywords" content="motoboy defender, aplicativo motoboy defender, entregador, evitar bloqueio injusto, prova blindada, aplicativo para motoboy">
-    <meta name="author" content="Décio Ricardo Klefenz">
-    <meta name="robots" content="index, follow">
+    <title>Motoboy Defender - App Oficial</title>
 
-    <!-- Meta Tags para Compartilhamento (WhatsApp / Redes Sociais) -->
-    <meta property="og:title" content="Motoboy Defender - Evite Bloqueios Injustos!">
-    <meta property="og:description" content="Proteja sua conta contra falsas alegações de extravio com provas digitais blindadas e localização via satélite.">
-    <meta property="og:url" content="https://motoboydefender.github.io/motoboydefender/">
-    <meta property="og:image" content="https://motoboydefender.github.io/motoboydefender/rss/banner_principal_1024x500.png">
+    <!-- Ícone profissional para a aba do navegador (PC e Android) -->
+    <link rel="icon" type="image/png" sizes="192x192" href="md.png">
+    
+    <!-- Ícone profissional para a tela inicial do celular (iPhone e Android) -->
+    <link rel="apple-touch-icon" sizes="192x192" href="md.png">
 
     <style>
-        /* Estilização moderna e responsiva (bonitinha para PC e Celular) */
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #0a0f1d;
-            color: #e2e8f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1c1c1c;
+            color: #ffffff;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            padding: 60px 20px;
             text-align: center;
-            border-bottom: 4px solid #10b981;
-        }
-        .alert-badge {
-            background-color: #ef4444;
-            color: white;
-            padding: 8px 16px;
-            font-weight: bold;
-            border-radius: 20px;
-            display: inline-block;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 14px rgba(239, 68, 68, 0.4);
-        }
-        h1 {
-            color: #ffffff;
-            font-size: 2.5rem;
-            margin: 0 0 10px 0;
-        }
-        .highlight {
-            color: #fbbf24;
         }
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
         }
-        .btn-download {
-            display: inline-block;
-            background-color: #fbbf24;
-            color: #000000;
-            padding: 15px 35px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 30px;
+        h1 {
+            color: #ffd700;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+        .banner-container {
+            margin: 20px 0;
+        }
+        .banner-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        .banner-img:hover {
+            transform: scale(1.02);
+        }
+        .badge-container {
             margin: 30px 0;
-            transition: transform 0.2s, background-color 0.2s;
-            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
         }
-        .btn-download:hover {
-            transform: scale(1.05);
-            background-color: #f59e0b;
+        .play-store-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #00AA00;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 170, 0, 0.4);
         }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
+        .play-store-btn:hover {
+            background-color: #008800;
         }
-        .card {
-            background-color: #1e293b;
+        .play-store-btn svg {
+            width: 28px;
+            height: 28px;
+            margin-right: 12px;
+            fill: #ffffff;
+        }
+        
+        /* Galeria de Fotos Otimizada */
+        .screenshot-gallery {
+            margin: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .screenshot-gallery img {
+            width: 31%;
+            min-width: 220px;
+            border-radius: 10px;
+            border: 2px solid #333333;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        .screenshot-gallery img:hover {
+            transform: scale(1.03);
+            border-color: #ffd700;
+        }
+
+        .section {
+            background-color: #262626;
             padding: 25px;
             border-radius: 12px;
-            border-left: 5px solid #10b981;
+            margin: 30px 0;
             text-align: left;
+            border-left: 5px solid #ffd700;
         }
-        .card h3 {
-            color: #10b981;
+        .section h2 {
+            color: #ffd700;
             margin-top: 0;
         }
-        .card .icon-md {
-            color: #fbbf24;
-            font-weight: bold;
+        ol {
+            padding-left: 20px;
+            line-height: 1.8;
         }
-        .privacy-section {
-            background-color: #111827;
+
+        /* CARD DE PRIVACIDADE: Design limpo, claro e muito legível */
+        .privacy-card {
+            background-color: #e8f5e9;
+            color: #1c2833;
             padding: 30px;
             border-radius: 12px;
-            margin-top: 50px;
-            border: 1px solid #374151;
+            margin-top: 60px;
             text-align: left;
+            line-height: 1.7;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 1px solid #c8e6c9;
         }
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: #64748b;
-            font-size: 0.9rem;
-            border-top: 1px solid #1e293b;
+        .privacy-card h3 {
+            color: #2e7d32;
+            margin-top: 0;
+            font-size: 1.4em;
+            border-bottom: 2px solid #a5d6a7;
+            padding-bottom: 8px;
+        }
+        .privacy-card p, .privacy-card ul {
+            font-size: 0.95em;
+        }
+        .privacy-card ul {
+            padding-left: 20px;
+        }
+        .privacy-card li {
+            margin-bottom: 10px;
+        }
+        
+        /* Ajuste para telas pequenas (Celulares) */
+        @media (max-width: 600px) {
+            .screenshot-gallery {
+                justify-content: center;
+            }
+            .screenshot-gallery img {
+                width: 80%;
+                margin-bottom: 15px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="alert-badge">Alerta ao Entregador</div>
-        <h1>EVITE <span class="highlight">BLOQUEIOS INJUSTOS!</span></h1>
-        <p style="font-size: 1.2rem; color: #94a3b8; max-width: 600px; margin: 15px auto 0 auto;">
-            Proteja o seu bolso e a sua conta contra falsas alegações de extravio de pedidos.
-        </p>
-    </header>
-
     <div class="container">
-        
-        <div style="text-align: center;">
-            <p style="font-size: 1.1rem;">O <strong>Motoboy Defender</strong> é o seu escudo digital na rua. Um aplicativo nativo feito sob medida para quem precisa de segurança jurídica na hora da entrega.</p>
-            
-            <!-- Botão de Download do APK direto do seu GitHub -->
-            <a href="app-release.apk" class="btn-download">⬇️ Baixar Motoboy Defender (APK)</a>
+        <!-- Topo da Página -->
+        <h1>MOTOBOY DEFENDER</h1>
+        <p class="subtitle">Proteja o seu bolso e a sua conta contra falhas de sistema e alegações de pedidos não entregues.</p>
+
+        <!-- Banner Principal Chamativo -->
+        <div class="banner-container">
+            <img src="evite.jpeg" alt="Evite Bloqueios Injustos com Motoboy Defender" class="banner-img">
         </div>
 
-        <h2 style="text-align: center; margin-top: 50px; color: #ffffff;">Recursos Principais</h2>
-        
-        <div class="features">
-            <div class="card">
-                <h3><span class="icon-md">[MD]</span> Botão Flutuante</h3>
-                <p>Funciona perfeitamente sobreposto aos aplicativos de entrega padrão. Tenha acesso à câmera com apenas um toque, sem fechar a sua rota.</p>
-            </div>
-            
-            <div class="card">
-                <h3>🛡️ Prova Blindada</h3>
-                <p>Gere fotos com uma faixa preta permanente contendo data, hora, latitude e longitude exatas calculadas via satélite. Prova incontestável de entrega.</p>
-            </div>
-
-            <div class="card">
-                <h3>📦 Registro Local</h3>
-                <p>Suas entregas ficam organizadas em um histórico simples e visual dentro do aplicativo, prontas para serem usadas em caso de disputa.</p>
-            </div>
+        <!-- Botão de Download Oficial com Aviso de Transição para Pago -->
+        <div class="badge-container">
+            <a href="https://www.mediafire.com/file/nctbtxarx0jjpio/MotoboyDefender_D.apk/file" class="play-store-btn" target="_blank">
+                <!-- Ícone de Download Seta para Baixo -->
+                <svg viewBox="0 0 24 24" xmlns="http://w3.org">
+                    <path d="M5 20H19V18H5V20ZM19 9H15V3H9V9H5L12 16L19 9Z"/>
+                </svg>
+                <span>BAIXAR APLICATIVO (GRÁTIS)</span>
+            </a>
+            <!-- Aviso inteligente de urgência e transparência -->
+            <p style="color: #ffcc00; font-size: 0.95em; margin-top: 12px; font-weight: bold; font-style: italic; padding: 0 10px; line-height: 1.4;">
+                ⚠️ Aproveite! O app está 100% gratuito nesta fase de lançamento pelo site. Em breve, estará disponível na Google Play Store com período de testes e assinatura mensal de R$ 6,99.
+            </p>
         </div>
 
-        <div class="privacy-section">
-            <h3 style="color: #ffffff; margin-top: 0;">🔒 Política de Privacidade</h3>
-            <p>A sua segurança e a privacidade dos seus dados vêm em primeiro lugar. O <strong>Motoboy Defender</strong> foi projetado com uma arquitetura 100% local:</p>
+        <!-- Seção Como Funciona (Linguagem do Corre) -->
+        <div class="section">
+            <h2>Como o App te Defende no Corre?</h2>
+            <p>Gere provas fotográficas incontestáveis contra bloqueios injustos das plataformas, carimbadas na hora com dados de satélite.</p>
+            <ol>
+                <li><strong>Ative o Escudo:</strong> Ligue o botão amarelo flutuante do MD e abra o aplicativo de entregas que você já usa normalmente.</li>
+                <li><strong>Registre a Entrega:</strong> No local, clique no botão flutuante e tire a foto focando no número da casa, portão ou cliente recebendo.</li>
+                <li><strong>Prova Blindada Sem Bagunça:</strong> O app cria uma faixa preta permanente na foto com as coordenadas do GPS, data e horário exato. Tudo vai direto para uma <strong>pasta organizada e exclusiva do Motoboy Defender</strong>, sem misturar ou lotar sua galeria pessoal!</li>
+            </ol>
+        </div>
+
+        <!-- Seção de Fotos Reais (Com proteção inteligente de erro para o mapa) -->
+        <div class="screenshot-gallery">
+            <img src="mapa.jpeg" alt="Motoboy Defender em Ação no iFood" onerror="this.src='mapa.jpg';">
+            <img src="print2.jfif" alt="Foto Carimbada Portão">
+            <img src="print3.jfif" alt="Demonstração na Rua">
+        </div>
+
+        <!-- Política de Privacidade Nova: Clara, Transparente e Legível -->
+        <div class="privacy-card">
+            <h3>🛡️ POLÍTICA DE PRIVACIDADE – MOTOBOY DEFENDER</h3>
+            <p>O aplicativo Motoboy Defender foi desenvolvido de forma independente para fornecer total segurança jurídica e comprovação física para entregadores de aplicativo.</p>
+            
             <ul>
-                <li>Não coletamos, não armazenamos e não enviamos as suas fotos ou dados de localização para servidores externos.</li>
-                <li>Tudo o que o aplicativo registra fica guardado única e exclusivamente na memória interna do seu próprio telemóvel.</li>
-                <li>Você tem controle total e absoluto sobre os seus arquivos de prova.</li>
+                <li><strong>1. Coleta e Uso de Informações:</strong> Solicitamos permissão da sua <strong>Câmera</strong> (usada unicamente para tirar as fotos de comprovação das entregas) e do seu <strong>Localização/GPS</strong> (ativado apenas no momento da foto para gerar as coordenadas geográficas sobre o carimbo da prova).</li>
+                <li><strong>2. Armazenamento Seguro e Sem Servidores:</strong> O Motoboy Defender <strong>não possui servidores externos</strong> e não coleta ou monitora seus dados pela internet. Suas fotos e históricos ficam salvos localmente e exclusivamente na memória do seu próprio celular. Nós não compartilhamos nada com as plataformas (iFood, Rappi, Uber, etc.).</li>
             </ul>
+            
+            <p style="margin-top: 20px; font-weight: bold; border-top: 1px solid #a5d6a7; padding-top: 15px;">
+                📬 Contato Direto com o Desenvolvedor: 
+                <a href="mailto:motoboydefender@hotmail.com" style="color: #2e7d32; text-decoration: underline; font-weight: bold;">motoboydefender@hotmail.com</a>
+            </p>
         </div>
-
     </div>
-
-    <footer>
-        <p>&copy; 2026 Motoboy Defender. Desenvolvido por Décio Ricardo Klefenz. Todos os direitos reservados.</p>
-    </footer>
 
 </body>
 </html>
