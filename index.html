@@ -3,48 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - Motoboy Defender</title>
+    <title>Motoboy Defender - App Oficial</title>
+
+    <!-- Ícone profissional para a aba do navegador (PC e Android) -->
+    <link rel="icon" type="image/png" sizes="192x192" href="md.png">
+    
+    <!-- Ícone profissional para a tela inicial do celular (iPhone e Android) -->
+    <link rel="apple-touch-icon" sizes="192x192" href="md.png">
+
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #e67e22; }
-        h2 { color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        .highlight { background-color: #f9f9f9; padding: 15px; border-left: 4px solid #e67e22; margin: 20px 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1c1c1c;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: #ffd700;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+        .banner-container {
+            margin: 20px 0;
+        }
+        .banner-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        .banner-img:hover {
+            transform: scale(1.02);
+        }
+        .badge-container {
+            margin: 30px 0;
+        }
+        .play-store-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #00AA00;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 170, 0, 0.4);
+        }
+        .play-store-btn:hover {
+            background-color: #008800;
+        }
+        .play-store-btn svg {
+            width: 28px;
+            height: 28px;
+            margin-right: 12px;
+            fill: #ffffff;
+        }
+        
+        /* Galeria de Fotos Otimizada */
+        .screenshot-gallery {
+            margin: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .screenshot-gallery img {
+            width: 31%;
+            min-width: 220px;
+            border-radius: 10px;
+            border: 2px solid #333333;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        .screenshot-gallery img:hover {
+            transform: scale(1.03);
+            border-color: #ffd700;
+        }
+
+        .section {
+            background-color: #262626;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: left;
+            border-left: 5px solid #ffd700;
+        }
+        .section h2 {
+            color: #ffd700;
+            margin-top: 0;
+        }
+        ol {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        /* CARD DE PRIVACIDADE: Design limpo, claro e muito legível */
+        .privacy-card {
+            background-color: #e8f5e9;
+            color: #1c2833;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 60px;
+            text-align: left;
+            line-height: 1.7;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 1px solid #c8e6c9;
+        }
+        .privacy-card h3 {
+            color: #2e7d32;
+            margin-top: 0;
+            font-size: 1.4em;
+            border-bottom: 2px solid #a5d6a7;
+            padding-bottom: 8px;
+        }
+        .privacy-card p, .privacy-card ul {
+            font-size: 0.95em;
+        }
+        .privacy-card ul {
+            padding-left: 20px;
+        }
+        .privacy-card li {
+            margin-bottom: 10px;
+        }
+        
+        /* Ajuste para telas pequenas (Celulares) */
+        @media (max-width: 600px) {
+            .screenshot-gallery {
+                justify-content: center;
+            }
+            .screenshot-gallery img {
+                width: 80%;
+                margin-bottom: 15px;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <h1>Política de Privacidade</h1>
-    <p><strong>Aplicativo:</strong> Motoboy Defender<br>
-    <strong>Desenvolvedor:</strong> Décio Ricardo Klefenz<br>
-    <strong>Última atualização:</strong> Maio de 2026</p>
+    <div class="container">
+        <!-- Topo da Página -->
+        <h1>MOTOBOY DEFENDER</h1>
+        <p class="subtitle">Proteja o seu bolso e a sua conta contra falhas de sistema e alegações de pedidos não entregues.</p>
 
-    <p>A sua privacidade é uma prioridade absoluta para nós. O <strong>Motoboy Defender</strong> foi desenvolvido com o compromisso de proteger o trabalhador e seus dados. Esta política explica como o aplicativo interage com o seu dispositivo.</p>
+        <!-- Banner Principal Chamativo -->
+        <div class="banner-container">
+            <img src="evite.jpeg" alt="Evite Bloqueios Injustos com Motoboy Defender" class="banner-img">
+        </div>
 
-    <h2>1. Coleta e Uso de Dados</h2>
-    <div class="highlight">
-        <strong>Privacidade Total:</strong> O Motoboy Defender NÃO coleta, NÃO armazena em servidores externos e NÃO compartilha nenhum dado pessoal, localização ou imagem do usuário. Tudo o que você faz permanece exclusivamente no seu dispositivo.
+        <!-- Botão de Download Oficial com Aviso de Transição para Pago -->
+        <div class="badge-container">
+            <a href="https://www.mediafire.com/file/nctbtxarx0jjpio/MotoboyDefender_D.apk/file" class="play-store-btn" target="_blank">
+                <!-- Ícone de Download Seta para Baixo -->
+                <svg viewBox="0 0 24 24" xmlns="http://w3.org">
+                    <path d="M5 20H19V18H5V20ZM19 9H15V3H9V9H5L12 16L19 9Z"/>
+                </svg>
+                <span>BAIXAR APLICATIVO (GRÁTIS)</span>
+            </a>
+            <!-- Aviso inteligente de urgência e transparência -->
+            <p style="color: #ffcc00; font-size: 0.95em; margin-top: 12px; font-weight: bold; font-style: italic; padding: 0 10px; line-height: 1.4;">
+                ⚠️ Aproveite! O app está 100% gratuito nesta fase de lançamento pelo site. Em breve, estará disponível na Google Play Store com período de testes e assinatura mensal de R$ 6,99.
+            </p>
+        </div>
+
+        <!-- Seção Como Funciona (Linguagem do Corre) -->
+        <div class="section">
+            <h2>Como o App te Defende no Corre?</h2>
+            <p>Gere provas fotográficas incontestáveis contra bloqueios injustos das plataformas, carimbadas na hora com dados de satélite.</p>
+            <ol>
+                <li><strong>Ative o Escudo:</strong> Ligue o botão amarelo flutuante do MD e abra o aplicativo de entregas que você já usa normalmente.</li>
+                <li><strong>Registre a Entrega:</strong> No local, clique no botão flutuante e tire a foto focando no número da casa, portão ou cliente recebendo.</li>
+                <li><strong>Prova Blindada Sem Bagunça:</strong> O app cria uma faixa preta permanente na foto com as coordenadas do GPS, data e horário exato. Tudo vai direto para uma <strong>pasta organizada e exclusiva do Motoboy Defender</strong>, sem misturar ou lotar sua galeria pessoal!</li>
+            </ol>
+        </div>
+
+        <!-- Seção de Fotos Reais (Com proteção inteligente de erro para o mapa) -->
+        <div class="screenshot-gallery">
+            <img src="mapa.jpeg" alt="Motoboy Defender em Ação no iFood" onerror="this.src='mapa.jpg';">
+            <img src="print2.jfif" alt="Foto Carimbada Portão">
+            <img src="print3.jfif" alt="Demonstração na Rua">
+        </div>
+
+        <!-- Política de Privacidade Nova: Clara, Transparente e Legível -->
+        <div class="privacy-card">
+            <h3>🛡️ POLÍTICA DE PRIVACIDADE – MOTOBOY DEFENDER</h3>
+            <p>O aplicativo Motoboy Defender foi desenvolvido de forma independente para fornecer total segurança jurídica e comprovação física para entregadores de aplicativo.</p>
+            
+            <ul>
+                <li><strong>1. Coleta e Uso de Informações:</strong> Solicitamos permissão da sua <strong>Câmera</strong> (usada unicamente para tirar as fotos de comprovação das entregas) e do seu <strong>Localização/GPS</strong> (ativado apenas no momento da foto para gerar as coordenadas geográficas sobre o carimbo da prova).</li>
+                <li><strong>2. Armazenamento Seguro e Sem Servidores:</strong> O Motoboy Defender <strong>não possui servidores externos</strong> e não coleta ou monitora seus dados pela internet. Suas fotos e históricos ficam salvos localmente e exclusivamente na memória do seu próprio celular. Nós não compartilhamos nada com as plataformas (iFood, Rappi, Uber, etc.).</li>
+            </ul>
+            
+            <p style="margin-top: 20px; font-weight: bold; border-top: 1px solid #a5d6a7; padding-top: 15px;">
+                📬 Contato Direto com o Desenvolvedor: 
+                <a href="mailto:motoboydefender@hotmail.com" style="color: #2e7d32; text-decoration: underline; font-weight: bold;">motoboydefender@hotmail.com</a>
+            </p>
+        </div>
     </div>
-
-    <h2>2. Permissões Requeridas e Justificativas</h2>
-    <p>Para funcionar corretamente e cumprir seu papel de proteção, o aplicativo solicita as seguintes permissões:</p>
-    <ul>
-        <li><strong>Câmera:</strong> Necessária exclusivamente para capturar a foto do local da entrega no momento em que o usuário aciona o botão.</li>
-        <li><strong>Localização (GPS/Satélite):</strong> Necessária para capturar as coordenadas geográficas exatas (Latitude e Longitude) e inseri-las como carimbo permanente na foto, servindo de prova incontestável.</li>
-        <li><strong>Sobreposição de Tela (Aparecer sobre outros apps):</strong> Necessária para que o Botão Flutuante (MD) fique visível enquanto você utiliza seus aplicativos de corrida tradicionais.</li>
-        <li><strong>Acesso ao Armazenamento/Galeria:</strong> Necessária apenas para criar a pasta pública "MotoboyDefender" e salvar as fotos carimbadas diretamente no seu celular.</li>
-    </ul>
-
-    <h2>3. Serviços de Terceiros e Cobrança</h2>
-    <p>O aplicativo utiliza o sistema oficial de compras do Google (<em>Google Play Billing</em>) para gerenciar o período de testes de 7 dias e a assinatura mensal de R$ 6,99. A conexão com a internet é utilizada estritamente para validar o status dessa assinatura de forma segura junto aos servidores do Google.</p>
-
-    <h2>4. Segurança</h2>
-    <p>Como o aplicativo opera localmente, a segurança das fotos geradas depende da segurança do próprio smartphone do usuário. Recomendamos manter o sistema operacional do seu celular atualizado.</p>
-
-    <h2>5. Alterações nesta Política</h2>
-    <p>Podemos atualizar nossa Política de Privacidade de tempos em tempos para refletir melhorias no aplicativo. Qualquer mudança será publicada diretamente nesta página.</p>
-
-    <h2>6. Contato</h2>
-    <p>Se você tiver dúvidas ou sugestões sobre o Motoboy Defender, entre em contato com o desenvolvedor pelo e-mail oficial cadastrado na Google Play Store.</p>
 
 </body>
 </html>
